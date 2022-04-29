@@ -3,7 +3,6 @@ import requests
 #---------------------------------------------------------------------------------------------
 
 url = input('paste your apple music playlist link here: ')
-#url = 'https://music.apple.com/us/playlist/drivin/pl.u-MDAWWE3s4YN37X'
 
 am_playlist = requests.get(url)
 

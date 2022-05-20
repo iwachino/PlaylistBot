@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""Convert Apple Music URLs
+    into CSV output!"""
+
 import requests
 from bs4 import BeautifulSoup
 

@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 # ---------------------------------------------------------------------------------------------
 
-url = input("paste your apple music playlist link here: ")
+url = input("\npaste your apple music playlist link here: ")
 
 am_playlist = requests.get(url)
 

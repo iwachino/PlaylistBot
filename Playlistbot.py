@@ -24,7 +24,7 @@ artists = messy_artists[::3]
 
 playlist = zip(artists, songs)
 print(list(playlist))
-with open("./%s.csv" % title, "w") as f:
+with open("./%s" % filename, "w") as f:
     for (artists, songs) in playlist:
         f.write("{0},{1}\n".format(artists, songs))
 

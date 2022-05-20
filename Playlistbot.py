@@ -9,7 +9,7 @@ am_playlist = requests.get(url)
 
 soup = BeautifulSoup(am_playlist.content, "html.parser")
 
-title = url.split("/")[5]
+filename = (url.split("/")[5] + ".csv"
 
 songs = [
     e.text

@@ -23,7 +23,7 @@ messy_artists = [
 artists = messy_artists[::3]
 
 playlist = zip(artists, songs)
-with open("./"title".csv", "w") as f:
+with open("./%s.csv" % name, "w") as f:
     for (artists, songs) in playlist:
         f.write("{0},{1}\n".format(artists, songs))
 

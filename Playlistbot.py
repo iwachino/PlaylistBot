@@ -27,4 +27,5 @@ with open("./%s.csv" % title, "w") as f:
     for (artists, songs) in playlist:
         f.write("{0},{1}\n".format(artists, songs))
 
+print(playlist)
 print(f"file {title}.csv successfully created!")

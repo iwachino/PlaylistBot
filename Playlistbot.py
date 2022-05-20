@@ -28,7 +28,7 @@ with open("./%s" % filename, "w") as f:
     for (artists, songs) in playlist:
         f.write("{0},{1}\n".format(artists, songs))
 
-print(f"file {filename} successfully created!")
+print(f"{filename} successfully created!")
 
 with open(filename, "r") as fin:
     print(fin.read())

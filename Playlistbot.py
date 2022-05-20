@@ -9,6 +9,8 @@ am_playlist = requests.get(url)
 
 soup = BeautifulSoup(am_playlist.content, "html.parser")
 
+title = soup.find_all("div", {"class": "product-name"}, text=True)
+
 songs = [
     e.text
     for e in soup.find_all("div", {"class": "songs-list-row__song-name"}, text=True)

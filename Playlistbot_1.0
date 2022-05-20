@@ -4,7 +4,7 @@ import requests
 
 url = input('paste your apple music playlist link here: ')
 
-am_playlist = requests.get(url)
+am_playlist = requests.get("https://github.com/iwachino/PlaylistBot")
 
 soup = BeautifulSoup(am_playlist.content, 'html.parser')
 
